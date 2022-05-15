@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>...</title>
+</head>
+
+<body>
+
+<div id="app">
+  <h3>My Identicon Genenrator</h3>
+
+  <div>
+    Input:
+    <input v-on:input="onInput" style="text-align: right"/>
+    {{ reverse }}
+  </div>
+
+  <div>
+    Identicon:
+    <div v-html="identicon"></div>
+  </div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+  <script src="https://cdn.rawgit.com/dmester/jdenticon/5bbdf8cb/dist/jdenticon.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
