@@ -1,8 +1,8 @@
 
 new Vue({
   el: '#app',
-  data: {
-    textInput: ''
+  data() {
+    return { textInput: '' }
   },
   computed: {
     identicon() {
@@ -17,9 +17,4 @@ new Vue({
       this.textInput = event.target.value
     }
   }
-})
-
-new Vue({
-  el: '#root',
-  
 })
